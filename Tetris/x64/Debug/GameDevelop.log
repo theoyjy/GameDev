@@ -1,0 +1,4 @@
+﻿  Tetris.cpp
+E:\C++Dev\GameDevelop\Tetris\Tetris.cpp(67,38): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\C++Dev\GameDevelop\Tetris\Tetris.cpp(67,25): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+  GameDevelop.vcxproj -> E:\C++Dev\GameDevelop\Tetris\x64\Debug\GameDevelop.exe

@@ -1,0 +1,16 @@
+﻿  Tetris.cpp
+Tetris.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QAE@PBDABVlocale@std@@@Z)，函数 _main 中引用了该符号
+Tetris.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::String::~String(void)" (__imp_??1String@sf@@QAE@XZ)，函数 _main 中引用了该符号
+Tetris.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (__imp_??0VideoMode@sf@@QAE@III@Z)，函数 _main 中引用了该符号
+Tetris.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Window::close(void)" (__imp_?close@Window@sf@@QAEXXZ)，函数 _main 中引用了该符号
+Tetris.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: bool __thiscall sf::Window::isOpen(void)const " (__imp_?isOpen@Window@sf@@QBE_NXZ)，函数 _main 中引用了该符号
+Tetris.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: bool __thiscall sf::Window::pollEvent(class sf::Event &)" (__imp_?pollEvent@Window@sf@@QAE_NAAVEvent@2@@Z)，函数 _main 中引用了该符号
+Tetris.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::Window::display(void)" (__imp_?display@Window@sf@@QAEXXZ)，函数 _main 中引用了该符号
+Tetris.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: void __thiscall sf::RenderTarget::clear(class sf::Color const &)" (__imp_?clear@RenderTarget@sf@@QAEXABVColor@2@@Z)，函数 _main 中引用了该符号
+Tetris.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (__imp_??0RenderWindow@sf@@QAE@VVideoMode@1@ABVString@1@IABUContextSettings@1@@Z)，函数 _main 中引用了该符号
+Tetris.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: virtual __thiscall sf::RenderWindow::~RenderWindow(void)" (__imp_??1RenderWindow@sf@@UAE@XZ)，函数 _main 中引用了该符号
+Tetris.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: static class sf::Color const sf::Color::White" (__imp_?White@Color@sf@@2V12@B)，函数 _main 中引用了该符号
+E:\C++Dev\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib\sfml-graphics-d.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+E:\C++Dev\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib\sfml-system-d.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+E:\C++Dev\SFML-2.5.1-windows-vc15-64-bit\SFML-2.5.1\lib\sfml-window-d.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+E:\C++Dev\GameDevelop\Tetris\Debug\GameDevelop.exe : fatal error LNK1120: 11 个无法解析的外部命令
