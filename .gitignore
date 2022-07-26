@@ -1,0 +1,5 @@
+##ignore files##
+/Tetris/.vs
+/Tetris/Debug
+/Tetris/x64
+/Tetris/GameDevelop.*
