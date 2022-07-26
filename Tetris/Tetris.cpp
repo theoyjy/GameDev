@@ -38,9 +38,14 @@ bool check()
 	for (int i(0); i < 4; ++i)
 	{
 		if (a[i].x < 0 || a[i].x >= N || a[i].y >= M)
+		{
 			return false;
+		}
 		else if (field[a[i].y][a[i].x]) // 已经有格子占据场景
+		{
 			return false;
+
+		}
 	}
 	return true;
 }
@@ -89,10 +94,17 @@ int main()
 			}
 		}
 
-		if (Keyboard::isKeyPressed(Keyboard::Down))delay = 0.05;
+		if (Keyboard::isKeyPressed(Keyboard::Down))
+		{
+			delay = 0.05;
+		}
+		
 		/// <- Move -> /// 
 		for (int i(0); i < 4; ++i)
+		{
+			b[i] = a[i];
 			a[i].x += moveDirection;
+		}
 
 		if (!check())
 		{
@@ -130,8 +142,9 @@ int main()
 			if (!check())
 			{
 				for (int i(0); i < 4; ++i) // a 出界，故用上一个tick的位置b，绘制到场景里
+				{
 					field[b[i].y][b[i].x] = colorNum;
-
+				}
 				// 生成下一个随机颜色 随机形状的tile
 				colorNum = 1 + rand() % 7;	
 				int n = rand() % 7;
@@ -141,9 +154,24 @@ int main()
 					a[i].y = figures[n][i] / 2; // 0, 1, 2, 3
 				}
 			}
-
 			timer = 0;
 		}
+		/// Check lines ///
+		int k = M - 1; // 从最下面一行开始
+		for (int i(M - 1); i > 0; --i) // y
+		{
+			int count = 0;
+			for (int j = 0; j < N; ++j) // x
+			{
+				if (field[i][j])	count++;
+				field[k][j] = field[i][j]; // 如果消除掉，上面一行覆盖下面一行
+			}
+			if (count < N)
+			{
+				k--;	// k 与 i 同步--，但当有一行要消除掉是k就是i行下面的行了
+			}
+		}
+
 
 		moveDirection = 0;
 		rotate = false;
@@ -161,7 +189,16 @@ int main()
 				window.draw(s);
 			}
 		}
-
+		if (a[0].x == 0)
+		{
+			int n = rand() % 7;
+			for (int i = 0; i < 4; ++i)
+			{
+				a[i].x = figures[n][i] % 2; // 0 or 1
+				a[i].y = figures[n][i] / 2; // 0, 1, 2, 3
+			}
+		}
+		
 		for (int i = 0; i < 4; i++) // 绘制正在移动的
 		{
 			s.setTextureRect(IntRect(colorNum* 18, 0, 18, 18));
