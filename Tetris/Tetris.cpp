@@ -52,7 +52,7 @@ int main()
 	RenderWindow window(VideoMode(320, 480), "The Game");
 
 	Texture t;
-	t.loadFromFile("./Resources/TetrisTiles.png");
+	t.loadFromFile("./Resources/Tiles.png");
 	Sprite s(t);
 	s.setTextureRect(IntRect(0, 0, 18, 18)); //ÇÐ¸î²ÄÖÊ
 
