@@ -1,4 +1,10 @@
 ﻿  Tetris.cpp
-E:\C++Dev\GameDevelop\Tetris\Tetris.cpp(67,38): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
-E:\C++Dev\GameDevelop\Tetris\Tetris.cpp(67,25): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\C++Dev\GameDevelop\Tetris\Tetris.cpp(50,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+E:\C++Dev\GameDevelop\Tetris\Tetris.cpp(64,19): warning C4305: “初始化”: 从“double”到“float”截断
+E:\C++Dev\GameDevelop\Tetris\Tetris.cpp(92,58): warning C4305: “=”: 从“double”到“float”截断
+E:\C++Dev\GameDevelop\Tetris\Tetris.cpp(147,14): warning C4305: “=”: 从“double”到“float”截断
+E:\C++Dev\GameDevelop\Tetris\Tetris.cpp(157,29): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\C++Dev\GameDevelop\Tetris\Tetris.cpp(157,21): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\C++Dev\GameDevelop\Tetris\Tetris.cpp(165,38): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+E:\C++Dev\GameDevelop\Tetris\Tetris.cpp(165,25): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
   GameDevelop.vcxproj -> E:\C++Dev\GameDevelop\Tetris\x64\Debug\GameDevelop.exe
